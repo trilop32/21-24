@@ -5,6 +5,7 @@ using namespace std;
 int main()
 {
     setlocale(LC_ALL, "Russian");
+    //задание 3
     /*double a, b, c;
     cin >> a;
     cin >> b;
@@ -35,8 +36,9 @@ int main()
     cout << "Радиан A: " << angleA << "; Градусов: " << degreesA << "; Минут: " << minutesA << "; Секунд: " << secondsA << endl;
     cout << "Радиан B: " << angleB << "; Градусов: " << degreesB << "; Минут: " << minutesB << "; Секунд: " << secondsB << endl;
     cout << "Радиан C: " << angleC << "; Градусов: " << degreesC << "; Минут: " << minutesC << "; Секунд: " << secondsC << endl;*/
-
-    int number, count = 0;
+    
+    //Задание 4
+    /*int number, count = 0;
     cin >> number;
     if (number >= 100000 && number <= 999999) {
         for (int i = 0; i < 6; i++) {
@@ -50,10 +52,25 @@ int main()
     }
     else {
         cout << "Введенное число не является шестизначным." <<endl;
+    }*/
+
+    //задание 5
+    double a,c,d;
+    /*cin >> a;
+    c = pow(a, 2);
+    d = pow(a, 3);
+    cout<< a<<" " << c << " " << d;*/
+    cin >> c;
+    cin >> d;
+    double a1 = pow(c, 1.0 / 3.0);
+    double a2 = pow(d, 1.0 / 2.0);
+    if (a1 == a2) {
+        cout << a1;
     }
-
-
-
-
-
+    double a3 = pow(d, 1.0 / 3.0);
+    double a4 = pow(c, 1.0 / 2.0);    
+    if (a3 == a4) {
+        cout << a3;
+    }
+    
 }
