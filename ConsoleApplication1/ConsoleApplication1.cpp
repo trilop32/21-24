@@ -98,60 +98,61 @@ int main()
     cin >> A >> B;
     if (A + B > 32767)
         cout << "нужно меньше";
-    else
-        cout << A + B;*/
+    else{
+        cout << A + B;
+    }*/
+    //Задание 8
+    /*int num;
+    string f = "";
+    float MASS,mass;
+    cout << "Введите массу в кг: ";
+    cin >> mass;
+    cout << "Введите номер единицы измерения:\n";
+    cout << "1 - килограмм\n";
+    cout << "2 - миллиграмм\n";
+    cout << "3 - грамм\n";
+    cout << "4 - тонна\n";
+    cout << "5 - центнер\n";
+    cin >> num;
+    switch (num) {
+    case 1:
+        MASS = mass;
+        f = "килограммах";
+        break;
+    case 2:
+        MASS = mass / 1000000;
+        f = "миллиграммах";
+        break;
+    case 3:
+        MASS = mass / 1000;
+        f = "граммах";
+        break;
+    case 4:
+        MASS = mass*1000;
+        f = "тоннах";
+        break;
+    case 5:
+        MASS = mass*100;
+        f = "центнерах";
+        break;
+    default:
+        cout << "Неверный номер единицы измерения!\n";
+    }
+    cout << "Масса в "<<f<<": " << MASS << endl;*/
 
-        //Задание 8
-        /*int num;
-        string f = "";
-        float MASS,mass;
-        cout << "Введите массу в кг: ";
-        cin >> mass;
-        cout << "Введите номер единицы измерения:\n";
-        cout << "1 - килограмм\n";
-        cout << "2 - миллиграмм\n";
-        cout << "3 - грамм\n";
-        cout << "4 - тонна\n";
-        cout << "5 - центнер\n";
-        cin >> num;
-        switch (num) {
-        case 1:
-            MASS = mass;
-            f = "килограммах";
-            break;
-        case 2:
-            MASS = mass / 1000000;
-            f = "миллиграммах";
-            break;
-        case 3:
-            MASS = mass / 1000;
-            f = "граммах";
-            break;
-        case 4:
-            MASS = mass*1000;
-            f = "тоннах";
-            break;
-        case 5:
-            MASS = mass*100;
-            f = "центнерах";
-            break;
-        default:
-            cout << "Неверный номер единицы измерения!\n";
-        }
-        cout << "Масса в "<<f<<": " << MASS << endl;*/
+    //задание 9
+    /*double x;
+    double res;
+    cin >> x;
+    res = x - (pow(x, 3) / 1 * 2 * 3)
+        + (pow(x, 5) / 1 * 2 * 3 * 4 * 5)
+        - (pow(x, 7) / 1 * 2 * 3 * 4 * 5 * 6 * 7)
+        + (pow(x, 9) / 1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9)
+        - (pow(x, 11) / 1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 10 * 11)
+        + (pow(x, 13) / 1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 10 * 11 * 12 * 13);
+    cout << res;*/
 
-        //задание 9
-        /*double x;
-        double res;
-        cin >> x;
-        res = x - (pow(x, 3) / 1 * 2 * 3)
-            + (pow(x, 5) / 1 * 2 * 3 * 4 * 5)
-            - (pow(x, 7) / 1 * 2 * 3 * 4 * 5 * 6 * 7)
-            + (pow(x, 9) / 1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9)
-            - (pow(x, 11) / 1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 10 * 11)
-            + (pow(x, 13) / 1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 10 * 11 * 12 * 13);
-        cout << res;*/
-
+    //задание 10
     int n;
     cout << "Введите натуральное число n: ";
     cin >> n;
