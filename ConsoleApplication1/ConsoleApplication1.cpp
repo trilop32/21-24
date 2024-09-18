@@ -2,16 +2,10 @@
 #include <cmath>
 #include <iomanip>
 using namespace std;
-void radiansToDMS(double radians, int& degrees, int& minutes, double& seconds) {
-    degrees = static_cast<int>(radians * 180 / 3.14);
-    double fractionalPart = radians * 180 / 3.14 - degrees;
-    minutes = static_cast<int>(fractionalPart * 60);
-    seconds = (fractionalPart * 60 - minutes) * 60;
-}
 int main()
 {
     setlocale(LC_ALL, "Russian");
-    double a, b, c;
+    /*double a, b, c;
     cin >> a;
     cin >> b;
     cin >> c;
@@ -40,5 +34,26 @@ int main()
     cout << fixed << setprecision(2);
     cout << "Радиан A: " << angleA << "; Градусов: " << degreesA << "; Минут: " << minutesA << "; Секунд: " << secondsA << endl;
     cout << "Радиан B: " << angleB << "; Градусов: " << degreesB << "; Минут: " << minutesB << "; Секунд: " << secondsB << endl;
-    cout << "Радиан C: " << angleC << "; Градусов: " << degreesC << "; Минут: " << minutesC << "; Секунд: " << secondsC << endl;
+    cout << "Радиан C: " << angleC << "; Градусов: " << degreesC << "; Минут: " << minutesC << "; Секунд: " << secondsC << endl;*/
+
+    int number, count = 0;
+    cin >> number;
+    if (number >= 100000 && number <= 999999) {
+        for (int i = 0; i < 6; i++) {
+            int digit = number % 10;
+            number /= 10;
+            if (digit % 3 == 0) {
+                count++;                
+            }
+        }
+        cout << "Количество цифр, кратных 3: " << count << endl;
+    }
+    else {
+        cout << "Введенное число не является шестизначным." <<endl;
+    }
+
+
+
+
+
 }
